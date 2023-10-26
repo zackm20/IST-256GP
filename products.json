@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "desc": "Mens Shirt",
+      "category": "Category X",
+      "measure": "Each",
+      "price": 19.99,
+      "weight": 1.2
+    },
+    {
+      "id": "2",
+      "desc": "Womens Shirt",
+      "category": "Category Y",
+      "measure": "Pack",
+      "price": 24.99,
+      "weight": 2.5
+    }
+  ]
+}

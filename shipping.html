@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Selection</title>
+    <link rel="stylesheet" href="shopper.css">
+    <link rel="stylesheet" href="shipping.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src=
+                    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+<body>
+<nav>
+    <div class="header">
+        <div class="nav">
+            <a href="">Home</a> |
+            <a href="shopper.html">Shopper Login</a> |
+            <a href="Product.html">Product Management</a> |
+            <a href="">Shopping Cart</a> |
+            <a href="">Shipping Information</a> |
+            <a href="">Billing and Returns</a> |
+        </div>
+    </div>
+</nav>
+<hr>
+<div class="container-fluid login">
+    <div class="card m-3 mx-auto">
+        <h5 class="card-header">Product Management</h5>
+        <div class="card-body">
+
+            <form id="form" onsubmit="validateInputs()" novalidate>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Product ID:</label>
+                    <input type="text" required class="form-control" placeholder="Enter Street Address" id="address" aria-describedby="emailHelp">
+                    <div class="invalid-feedback">
+                        </div>
+
+
+                    <div class="mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" required class="form-control" placeholder="Enter City" id="city" aria-describedby="emailHelp">
+
+                    </div>
+
+
+                <div class="mb-3">
+                    <label for="state" class="form-label">State</label>
+                    <input type="text" required class="form-control" placeholder="Enter City" id="state" aria-describedby="emailHelp">
+
+                </div>
+                        <div class="mb-3">
+                            <label for="zip" class="form-label">State</label>
+                            <input type="text" required class="form-control" placeholder="Enter Zip Code" id="zip" aria-describedby="emailHelp">
+
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="shipping" class="form-label">Select Shipping Service</label>
+                        <select name="Product Category" id="shipping" style="width: 270px">
+                            <option value="FedEx">FedEx</option>
+                            <option value="DHL">DHL</option>
+                            <option value="UPS">UPS</option>
+                            <option value="USPS">USPS</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="service" class="form-label">Product Unit of Measure</label>
+                        <select name="Product Unit of Measure" id="service" style="width: 270px">
+                            <option value="One Day">One Day</option>
+                            <option value="Two Day">Two Day</option>
+                            <option value="Ground">Ground</option>
+                        </select>
+
+                    </div>
+                <button type="submit" class="displayJSON">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--<div ng-show="showJSON"></div>-->
+<!--<pre>{{ shippinginfoJSON | json}}</pre>-->
+
+
+
+<hr>
+<footer>
+    <nav>
+        <div class="header">
+            <div class="nav">
+                <a href="">Copyright</a> |
+                <a href="">Cookies and privacy policy</a> |
+                <a href="">Terms of use</a> |
+            </div>
+        </div>
+    </nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="shopper.css">
+    <link rel="stylesheet" href ="product.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+    </script>
+
+</head>
+<body>
+<!--nav bar Zackary Moyer & AmberLynn Polega!-->
+<nav>
+    <div class="header">
+        <div class="nav">
+            <a href="">Home</a> |
+            <a href="shopper.html">Shopper Login</a> |
+            <a href="Product.html">Product Management</a> |
+            <a href="">Shopping Cart</a> |
+            <a href="">Shipping Information</a> |
+            <a href="">Billing and Returns</a> |
+</nav>
+<!--nav bar Zackary Moyer & AmberLynn Polega!-->
+<hr>
+<!--signup card Zackary Moyer!-->
+<div class="container-fluid login">
+    <div class="card m-3 mx-auto">
+        <h5 class="card-header">Product Management</h5>
+        <div class="card-body">
+
+            <form id="form" onsubmit="validateInputs()" novalidate>
+
+                <div class="mb-3">
+                    <label for="id" class="form-label">Product ID:</label>
+                    <input type="text" required class="form-control" placeholder="Enter Product ID" id="id" aria-describedby="emailHelp">
+                    <div class="invalid-feedback">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="desc" class="form-label">Clothing Description</label>
+                        <input type="text" required class="form-control" placeholder="Enter Clothing Description" id="desc" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Product Category </label>
+                        <select name="Product Category" id="category" style="width: 270px">
+                            <option value="Men's Clothing">Men's clothing</option>
+                            <option value="Woman's Clothing">Woman's Clothing</option>
+                            <option value="Girl's Clothing">Girl's Clothing</option>
+                            <option value="Boy's Clothing">Boy's Clothing</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="measure" class="form-label">Product Unit of Measure</label>
+                        <select name="Product Unit of Measure" id="measure" style="width: 270px">
+                            <option value="Piece">Piece</option>
+                            <option value="Inches">Inches</option>
+                            <option value="Feet">Feet</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Product Price </label>
+                    <input type="text" required class="form-control" placeholder="Enter Price" id="price" aria-describedby="emailHelp">
+
+                </div>
+                <div class="mb-3">
+                    <label for="weight" class="form-label">Product Weight </label>
+                        <input type="text" required class="form-control" placeholder="Enter Weight" id="weight" aria-describedby="emailHelp">
+
+                </div>
+
+                <button type="submit" class="btn btn-primary end-0">Submit</button>
+            </form>
+</div>
+        </div>
+<!--signup card Zackary Moyer!-->
+<!--Zackary Moyer!-->
+<h2>Search for Product</h2>
+
+    <input type="search" id="query" name="q"
+           placeholder="Search"
+           aria-label="Search IDs">
+    <button id="searchButton" >Search</button>
+
+<h2>Product Details</h2>
+<h2>JSON</h2>
+</div>
+<!--Zackary Moyer!-->
+<pre id="user-data"></pre>
+
+    <script src="product.js"></script>
+<hr>
+<footer>
+    <nav>
+        <div class="header">
+            <div class="nav">
+                <a href="">Copyright</a> |
+                <a href="">Cookies and privacy policy</a> |
+                <a href="">Terms of use</a> |
+            </div>
+        </div>
+    </nav>
+</footer>
+
+</body>
+</html>

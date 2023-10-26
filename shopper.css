@@ -1,0 +1,25 @@
+/*Zackary Moyer*/
+.success{
+    border-color: green;
+}
+.error {
+    border-color:red;
+}
+
+.card{
+    max-width: 300px;
+}
+/*Zackary Moyer*/
+/* Nav Bar Zackary Moyer*/
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.nav li {
+    color: white;
+    display: inline-block;
+}
+/* Nav Bar Zackary Moyer*/
